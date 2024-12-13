@@ -30,12 +30,8 @@ str1 and str2 consist of English uppercase letters.'''
 
 class Solution:
     def gcdOfStrings(self, str1: str, str2: str) -> str:
-
-                if str1[:len(str2)] == str2:
-                        print("woh")
-            
-
+        pass
 
 a = Solution()
 
-a.gcdOfStrings("charming", "cha")
+a.gcdOfStrings("chachacha", "chacha")
