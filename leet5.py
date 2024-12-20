@@ -10,18 +10,20 @@ class Solution:
         vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
         reverse_s = s[::-1]
         picked = []
+        list_s = list(s)
         for i in reverse_s:
             if i in vowels:
                 picked.append(i)
-        print(picked)
+            print(picked)
 
-        for i in s:
+        for index, i in enumerate(list_s):
             if i in vowels:
-                print("found " + i)
-                # s[:i] = picked[0]
-                # replace in place
+                
+                list_s[index] = picked[0]
+                
                 picked.pop(0)
-                print("replaced with " + i)
+
+        return "".join(list_s)
                 
     
 a = Solution()
